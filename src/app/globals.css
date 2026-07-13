@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ──────────────────────────────────────────────────────────────────
+   DESIGN TOKENS
+   Ganti nilai di sini untuk rebranding client tanpa menyentuh komponen.
+   ────────────────────────────────────────────────────────────────── */
+:root {
+  /* ==========================
+     Brand Colors
+     ========================== */
+  --color-brand-primary: #2E9E6B;    /* Hijau — warna utama logo (Y) */
+  --color-brand-secondary: #E8491D;  /* Orange — aksen dari huruf M */
+  --color-brand-accent: #1F3A5F;     /* Navy blue — bagian tengah logo */
+
+  /* ==========================
+     Background & Surface
+     ========================== */
+  --color-brand-bg: #FFFFFF;
+  --color-brand-surface: #FFFFFF;
+  --color-brand-surface-dark: #192433;
+  --color-brand-border: rgba(25, 36, 51, 0.12);
+
+  /* ==========================
+     Text
+     ========================== */
+  --color-brand-text: #373435;
+  --color-brand-text-light: #FFFFFF;
+  --color-brand-muted: #6E6A69;
+
+  /* ==========================
+     Utility
+     ========================== */
+  --color-brand-navy: #192433;
+  --color-brand-blue: #1F3A5F;
+  --color-brand-green: #2E9E6B;
+  --color-brand-green-light: #5BC896;
+  --color-brand-red: #D6212D;
+  --color-brand-orange: #E8491D;
+  --color-brand-magenta: #C21A6B;
+
+  /* Typography */
+  --font-montserrat: 'Montserrat', system-ui, sans-serif;
+  --font-display: var(--font-montserrat);
+  --font-body: var(--font-montserrat);
+
+  /* Spacing & Radius */
+  --radius-card: 20px;
+  --radius-btn: 12px;
+  --radius-badge: 999px;
+
+  /* Section Padding */
+  --section-py: 6rem;
+  --section-px: 1.5rem;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, dan Opera */
+}
+
+
+/* ──────────────────────────────────────────────────────────────────
+   RESET & BASE
+   ────────────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-text);
+  font-family: var(--font-body), system-ui, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+/* ──────────────────────────────────────────────────────────────────
+   SCROLLBAR
+   ────────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-border);
+  border-radius: 3px;
+}
+
+/* ──────────────────────────────────────────────────────────────────
+   SELECTION
+   ────────────────────────────────────────────────────────────────── */
+::selection {
+  background: var(--color-brand-primary);
+  color: #ffffff;
+}
+
+/* ──────────────────────────────────────────────────────────────────
+   SECTION UTILITY
+   ────────────────────────────────────────────────────────────────── */
+@layer utilities {
+  .section-padding {
+    padding-top: var(--section-py);
+    padding-bottom: var(--section-py);
+    padding-left: var(--section-px);
+    padding-right: var(--section-px);
+  }
+
+  .container-wide {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Glassmorphism utility */
+  .glass {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--color-brand-border);
+  }
+}
+/* ──────────────────────────────────────────────────────────────────
+   ADDITIONAL STYLES
+   ────────────────────────────────────────────────────────────────── */
