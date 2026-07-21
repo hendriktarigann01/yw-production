@@ -24,7 +24,7 @@ export const SITE_CONFIG = {
 
   /** Nomor WhatsApp (format internasional, tanpa +) */
   whatsapp: {
-    number: "6283872779903",
+    number: "6281234567890",
     message:
       "Halo YW Production, saya tertarik dengan layanan perlengkapan produksi event.",
   },

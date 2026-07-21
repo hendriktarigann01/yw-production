@@ -209,7 +209,7 @@ export const BRANCHES_CONTENT: BranchContent = {
       id: "br-jabodetabek",
       name: "Operasional Jabodetabek (HQ)",
       address: "Grand Wisata, Tambun Selatan, Kab. Bekasi, Jawa Barat 17510",
-      phone: "+62 838-7277-9903",
+      phone: "+62 812-3456-7890",
       hours:
         "Buka 24 Jam untuk dukungan operasional, instalasi panggung, dan gladi resik event.",
     },
@@ -218,7 +218,7 @@ export const BRANCHES_CONTENT: BranchContent = {
       name: "Layanan Event Skala Nasional",
       address:
         "Menjangkau seluruh kota besar di Jawa, Bali, Sumatera, Kalimantan, dan Sulawesi untuk event pameran, rakornas, dan konser.",
-      phone: "+62 838-7277-9903",
+      phone: "+62 812-3456-7890",
       hours:
         "09.00 – 17.00 (Senin - Sabtu untuk konsultasi perencanaan & anggaran produksi).",
     },
@@ -233,7 +233,7 @@ export const LOCATION_CONTENT: LocationContent = {
   description:
     "Berpusat di Grand Wisata Bekasi, kantor pusat kami mengoordinasikan seluruh distribusi perlengkapan event, manajemen tim perencana kolaboratif, perawatan berkala unit hardware, serta pemantauan keselamatan instalasi panggung di lapangan demi pelayanan event kelas satu.",
   address: "Grand Wisata, Tambun Selatan, Kab. Bekasi, Jawa Barat 17510",
-  phone: "+62 838-7277-9903",
+  phone: "+62 812-3456-7890",
   hours: {
     "Senin - Jumat": "09.00 – 17.00",
     Sabtu: "09.00 – 15.00",

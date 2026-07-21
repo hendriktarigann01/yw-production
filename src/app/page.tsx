@@ -56,7 +56,7 @@ export default function HomePage() {
             name: SITE_CONFIG.name,
             image: SITE_CONFIG.url + "/YW Production - Hitam.png",
             url: SITE_CONFIG.url,
-            telephone: "+6283872779903",
+            telephone: "+6281234567890",
             logo: SITE_CONFIG.url + "/YW Production - Hitam.png",
             address: {
               "@type": "PostalAddress",
